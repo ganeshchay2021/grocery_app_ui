@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app_ui/constant/assets.dart';
-import 'package:grocery_app_ui/view/home/home_screen.dart';
+import 'package:grocery_app_ui/view/navbar/bottom_navbar.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -66,7 +66,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const HomeScreen(),
+                        builder: (context) => const BottomNavbar(),
                       ),
                     );
                   },
