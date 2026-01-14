@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
 
-List<String> groceryCategories = [
-  'ALL',
-  'Fruit',
-  'Vegetable',
-  'Meat',
-  'Dairy',
-];
+List<String> groceryCategories = ['ALL', 'Fruit', 'Vegetable', 'Meat', 'Dairy'];
 
 class Grocery {
   final String description, name, image, category;
@@ -14,21 +8,22 @@ class Grocery {
   final Color color;
   final bool isRecent;
 
-  Grocery(
-      {required this.category,
-      required this.image,
-      required this.description,
-      required this.name,
-      required this.rate,
-      required this.color,
-      required this.price,
-      required this.isRecent});
+  Grocery({
+    required this.category,
+    required this.image,
+    required this.description,
+    required this.name,
+    required this.rate,
+    required this.color,
+    required this.price,
+    required this.isRecent,
+  });
 }
 
 List<Grocery> groceryItems = [
   Grocery(
     category: 'Fruit',
-    image: 'assets/grocery/orange.png',
+    image: 'assets/images/orange.png',
     name: 'Orange Fruit',
     isRecent: false,
     price: 9.99,
@@ -37,7 +32,7 @@ List<Grocery> groceryItems = [
     description: description,
   ),
   Grocery(
-    image: 'assets/grocery/broccoli.png',
+    image: 'assets/images/broccoli.png',
     category: 'Vegetable',
     name: 'Broccoli Vegetable',
     description: description,
@@ -49,7 +44,7 @@ List<Grocery> groceryItems = [
   Grocery(
     category: 'Fruit',
     name: 'Apple Fruit',
-    image: 'assets/grocery/apple.png',
+    image: 'assets/images/apple.png',
     price: 15.15,
     rate: 4.5,
     color: Colors.red,
@@ -58,7 +53,7 @@ List<Grocery> groceryItems = [
   ),
   Grocery(
     category: 'Vegetable',
-    image: 'assets/grocery/potato.png',
+    image: 'assets/images/potato.png',
     description: description,
     name: 'Potato Vegetable',
     isRecent: false,
@@ -68,7 +63,7 @@ List<Grocery> groceryItems = [
   ),
   Grocery(
     category: 'Vegetable',
-    image: 'assets/grocery/lettuce.png',
+    image: 'assets/images/lettuce.png',
     color: Colors.lightGreenAccent,
     name: 'Celery Vegetable',
     isRecent: true,
@@ -78,7 +73,7 @@ List<Grocery> groceryItems = [
   ),
   Grocery(
     category: 'Vegetable',
-    image: 'assets/grocery/carrot.png',
+    image: 'assets/images/carrot.png',
     name: 'Carrot Vegetable',
     isRecent: true,
     description: description,
@@ -87,7 +82,7 @@ List<Grocery> groceryItems = [
     rate: 3.5,
   ),
   Grocery(
-    image: 'assets/grocery/grape.png',
+    image: 'assets/images/grape.png',
     name: 'Grape Fruit',
     category: 'Fruit',
     isRecent: false,
@@ -97,7 +92,7 @@ List<Grocery> groceryItems = [
     description: description,
   ),
   Grocery(
-    image: 'assets/grocery/mango.png',
+    image: 'assets/images/mango.png',
     name: 'Mango Fruit',
     category: 'Fruit ',
     color: Colors.redAccent,
@@ -108,7 +103,7 @@ List<Grocery> groceryItems = [
   ),
   Grocery(
     category: 'Fruit',
-    image: 'assets/grocery/melon.png',
+    image: 'assets/images/melon.png',
     isRecent: false,
     description: description,
     name: 'Melon Fruit',
@@ -118,7 +113,7 @@ List<Grocery> groceryItems = [
   ),
   Grocery(
     category: 'Meat',
-    image: 'assets/grocery/kfc chicken.png',
+    image: 'assets/images/kfc chicken.png',
     isRecent: false,
     description: description,
     name: 'KFC Chicken',
@@ -126,9 +121,9 @@ List<Grocery> groceryItems = [
     rate: 4.0,
     price: 20.0,
   ),
-    Grocery(
+  Grocery(
     category: 'Dairy',
-    image: 'assets/grocery/paneer.png',
+    image: 'assets/images/paneer.png',
     isRecent: false,
     description: description,
     name: 'Paneer',
